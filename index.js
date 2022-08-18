@@ -44,13 +44,12 @@ function addNextEmployee() {
             message: "Would you like to add another team member?",
             choices: ["Intern", "Engineer", "No more employees"],
         }
-    ])
-    .then(data => {
-        if(data.addNextEmployee === "Intern") {
+    ]).then(data => {
+        if(data.newEmployee == "Intern") {
             createIntern();
-        } else if (data.addNextEmployee === "Engineer") {
+        } else if (data.newEmployee == "Engineer") {
             createEngineer();
-        } else {
+        } else if("No more employees") {
             const finished = HTMLgenerator(team);
             fs.writeFile("./dist/index.html", finished, (err) => {
                 err ? console.error(err) : console.log("Employees list created!");
