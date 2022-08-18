@@ -1,0 +1,33 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    height: 150px;
+    background-color: red;
+    margin-bottom: 50px;
+}
+
+.card {
+    margin: 30px;
+}
+
+.card-body {
+    background-color: aqua;
+}
+
+.list-group {
+    padding: 25px;
+    background-color: grey;
+}
+
+.title-container h1 {
+    color: white;
+}
