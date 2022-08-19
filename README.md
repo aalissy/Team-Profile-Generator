@@ -45,3 +45,4 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 
 ## Video
+[#2.webm](https://user-images.githubusercontent.com/32420245/185533178-6a4fa8f3-4d3f-48a5-af78-4f585767a80a.webm)
