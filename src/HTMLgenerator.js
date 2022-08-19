@@ -1,3 +1,4 @@
+// Defines a function HTMLgenerator that takes in all the team members and returns the beginning HTML
 function HTMLgenerator(team) {
     return `<!DOCTYPE html>
 <html lang="en">
@@ -25,22 +26,28 @@ function HTMLgenerator(team) {
 </html>
   `;
 }
-
+// Defines a function employeeCard that takes in the employees 
 function employeeCard(e) {
+    // Let prompts be equal to a blank string
     let prompts = "";
+    // Let icon be equal to a blank string
     let icon = "";
+    // If employee role is manager then sets the prompt to officeNumber and the icon to a hot mug
     if (e.getRole() === "Manager") {
         prompts = `Office number: ${e.getOfficeNumber()}`;
-        icon = `<i class="fas fa-mug-hot mr-2"></i>`
+        icon = `<i class="fas fa-mug-hot mr-1"></i>`
+        // If employee role is engineer then sets the prompt to github and the icon to glasses
     } else if (e.getRole() === "Engineer") {
         prompts = `GitHub: <a href="https://github.com/${e.getGithub()}" target="_blank">${e.getGithub()}</a>`;
-        icon = `<i class="fas fa-glasses mr-2"></i>`
+        icon = `<i class="fas fa-glasses mr-1"></i>`
+        // If employee role is intern then sets the prompt to school and the icon to a graduate
     } else if (e.getRole() === "Intern") {
         prompts = `School: ${e.getSchool()}`;
         icon = `<i class="fas fa-user-graduate"></i>`
     }
+    // Returns the HTML of the cards
     return `
-    <div class="card">
+    <div class="card" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title">${e.getName()}</h5>
         <p class="card-text">${icon} ${e.getRole()}</p>
@@ -54,4 +61,5 @@ function employeeCard(e) {
     `;
 }
 
+// Exports the HTMLgenerator
 module.exports = HTMLgenerator;
