@@ -1,3 +1,4 @@
+/* Aligns the generated cards to the center */
 .card-container {
     display: flex;
     justify-content: center;
@@ -5,37 +6,45 @@
     flex-wrap: wrap;
 }
 
+/* Sets the title container to red and aligns the text to the center and also pushes the cards down lower*/
 .title-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
     height: 150px;
     background-color: #e84755;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
+/* Sets the margin between the cards to be 35 px */
 .card {
-    margin: 30px;
+    margin: 35px;
 }
 
+/* Sets the body of the card to be bright blue and creates a box shadow*/
 .card-body {
     background-color: #0277f7;
+    box-shadow: 5px 5px 5px gray;
 }
 
+/* Sets the background of the text in the cards to be white creates a padding around it and a adds a box shadow */
 .list-group {
     padding: 25px;
     background-color: #f6f7f9;
+    box-shadow: 5px 5px 5px gray;
 }
 
+/* Sets the text in the title container to be white */
 .title-container h1 {
     color: white;
 }
 
+/* Sets the text of the cards job to be white */
 .card-text {
     color: white;
 }
 
+/* Sets the name in the cards to be white */
 .card-title {
     color: white;
 }
