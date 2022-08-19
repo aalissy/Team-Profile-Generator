@@ -1,5 +1,6 @@
 # Team-Profile-Generator
 ## Description
+For this assignment I was tasked with creating a team profile generator that prompts the user with questions about a manager, intern, and engineer. Taking this data, it then displays this info into cards in an HTML. It also tests that each individual manager, intern, and engineer parameters are working functionally. 
 
 ## User Story
 AS A manager
